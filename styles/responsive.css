@@ -40,14 +40,24 @@
 
   .personalizacao__badge { display: none; }
 
+  .grid--4col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
   .feature-card {
     padding: 20px 12px;
     min-height: 150px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .feature-card__icon { font-size: 32px; }
 
-  .feature-card__title { font-size: var(--text-base); }
+  .feature-card__title {
+    font-size: 14px;
+    word-break: break-word;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
