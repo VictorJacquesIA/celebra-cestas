@@ -10,6 +10,8 @@
   gap: var(--space-gutter);
 }
 
+.grid > * { min-width: 0; }
+
 .grid--2col { grid-template-columns: 1fr; }
 .grid--3col { grid-template-columns: 1fr; }
 .grid--4col { grid-template-columns: repeat(2, 1fr); }
