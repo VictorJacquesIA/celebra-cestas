@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+  :root {
+    --space-xl: 48px;
+  }
+
+  .hero {
+    min-height: 600px;
+    padding-top: 24px;
+  }
+
+  .hero__overlay {
+    background: linear-gradient(to bottom, rgba(248,249,250,0.92) 0%, rgba(248,249,250,0.7) 100%);
+  }
+
+  .hero__title { font-size: 28px; }
+
+  .urgencia-bubble {
+    top: 12px;
+    left: 52%;
+    max-width: 180px;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .urgencia-bubble p { font-size: 11px; }
+  .urgencia-bubble__icon { font-size: 18px; }
+
+  .btn--lg {
+    padding: 12px 24px;
+    font-size: var(--text-base);
+  }
+
+  .jornada__quote {
+    position: static;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .section__header h2 { font-size: var(--text-2xl); }
+
+  .personalizacao__badge { display: none; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid--4col { grid-template-columns: repeat(2, 1fr); }
+}

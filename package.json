@@ -1,0 +1,17 @@
+{
+  "name": "celebra-cestas-sc",
+  "version": "1.0.0",
+  "description": "Landing page — Celebra Cestas SC",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --dist-dir dist --public-url /"
+  },
+  "staticFiles": {
+    "staticPath": "assets",
+    "watcherGlob": "**"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "parcel-reporter-static-files-copy": "^1.5.3"
+  }
+}
