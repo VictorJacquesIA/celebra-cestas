@@ -45,6 +45,19 @@
     gap: 12px;
   }
 
+  .grid--catalog {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .grid--catalog .card__img-wrap {
+    height: 220px;
+  }
+
+  .grid--catalog .card__price {
+    font-size: var(--text-xl);
+  }
+
   .feature-card {
     padding: 20px 12px;
     min-height: 150px;

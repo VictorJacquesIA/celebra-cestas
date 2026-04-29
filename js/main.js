@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTracking();
   initMobileMenu();
   initFaq();
+  initCardToggle();
 });
 
 function loadImages() {
@@ -44,6 +45,18 @@ function initFaq() {
       const answer = document.getElementById(trigger.getAttribute('aria-controls'));
       trigger.setAttribute('aria-expanded', String(!expanded));
       if (answer) answer.hidden = expanded;
+    });
+  });
+}
+
+function initCardToggle() {
+  document.querySelectorAll('.card__toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const items = btn.nextElementSibling;
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.firstChild.textContent = expanded ? 'Ver itens inclusos ' : 'Ocultar itens ';
+      if (items) items.hidden = expanded;
     });
   });
 }

@@ -215,6 +215,38 @@
   line-height: 1.4;
 }
 
+.card__toggle {
+  display: none;
+  width: 100%;
+  background: var(--color-surface-low);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 10px 16px;
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--color-primary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: background var(--transition-fast);
+}
+
+.card__toggle .material-symbols-outlined {
+  font-size: 20px;
+  transition: transform var(--transition-base);
+}
+
+.card__toggle[aria-expanded="true"] .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 767px) {
+  .card__toggle { display: flex; }
+  .card__items[hidden] { display: none !important; }
+  .card__items:not([hidden]) { display: flex; }
+}
+
 /* ── Personalização ── */
 .personalizacao__steps {
   display: flex;
