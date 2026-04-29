@@ -62,4 +62,5 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .grid--4col { grid-template-columns: repeat(2, 1fr); }
+  .grid--catalog { grid-template-columns: repeat(2, 1fr); }
 }

@@ -20,9 +20,10 @@ function trackButtonClicks() {
 
 function trackCestas() {
   const cestas = [
-    { track: 'card_manha',  nome: 'Celebra Manhã',  valor: 177.90 },
-    { track: 'card_doce',   nome: 'Celebra Doce',   valor: 169.90 },
-    { track: 'card_brinde', nome: 'Celebra Brinde', valor: 197.90 },
+    { track: 'card_manha',   nome: 'Celebra Manhã',   valor: 177.90 },
+    { track: 'card_doce',    nome: 'Celebra Doce',    valor: 169.90 },
+    { track: 'card_brinde',  nome: 'Celebra Brinde',  valor: 197.90 },
+    { track: 'card_premium', nome: 'Celebra Premium', valor: 249.70 },
   ];
 
   cestas.forEach(({ track, nome, valor }) => {
