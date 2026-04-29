@@ -51,7 +51,12 @@
   }
 
   .grid--catalog .card__img-wrap {
-    height: 220px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .grid--catalog .card__img {
+    object-fit: contain;
   }
 
   .grid--catalog .card__price {
