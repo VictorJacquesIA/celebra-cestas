@@ -15,15 +15,16 @@
   .hero__title { font-size: 28px; }
 
   .urgencia-bubble {
-    top: 12px;
-    left: 52%;
-    max-width: 180px;
-    padding: 10px 12px;
-    font-size: 11px;
+    top: 8px;
+    left: 48%;
+    max-width: 170px;
+    padding: 8px 12px;
+    gap: 4px;
   }
 
   .urgencia-bubble p { font-size: 11px; }
-  .urgencia-bubble__icon { font-size: 18px; }
+  .urgencia-bubble strong { font-size: 11px; }
+  .urgencia-bubble__icon { font-size: 14px; }
 
   .btn--lg {
     padding: 12px 24px;
